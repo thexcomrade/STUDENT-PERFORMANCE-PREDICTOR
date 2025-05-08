@@ -1,24 +1,27 @@
-🎓 Student Performance Predictor
+# Student Performance Predictor
 
-A web-based machine learning application that predicts student exam performance based on real-time inputs like study hours, attendance, past scores, and participation. Built to assist educators in identifying students at academic risk and offering timely intervention.
+A Flask-based web application that allows teachers to log in, add student data in real-time, and predict student exam performance using a trained machine learning model.
 
-🚀 Features
+## Features
 
-- Predicts student exam scores using a trained ML model
-- Real-time student data entry through web forms
-- Secure teacher login with hashed credentials
-- Dashboard displaying all student records and predictions
-- Model explainability with SHAP (optional)
-- SQLite database integration (lightweight and extendable)
+- Secure teacher login
+- Real-time student data entry
+- Performance prediction using machine learning
+- Dashboard to view all student data
 
-📌 How to Use
+## Setup Instructions
 
-- Clone the repository
-- Install dependencies: pip install -r requirements.txt
-- Train the ML model: python models/train_model.py
-- Run the server: python run.py
-- Open http://localhost:5000/login
+1. Clone the repository
+2. Install dependencies:
+   pip install -r requirements.txt
+3. Initialize the database:
+- Create `students.db` in the `database/` directory.
+- Create `users` and `students` tables.
+4. Train the model:
+   python models/train_model.py
+5. Run the application:
 
-📄 License
 
-This project is licensed under the MIT License.
+## License
+
+MIT License
