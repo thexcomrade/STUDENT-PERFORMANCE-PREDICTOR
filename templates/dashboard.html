@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h2>Welcome {{ current_user.username }}</h2>
+    <a href="{{ url_for('main.logout') }}">Logout</a> | 
+    <a href="{{ url_for('main.add_student') }}">Add Student</a>
+    <h3>Students</h3>
+    <table border="1">
+        <tr><th>ID</th><th>Study Hours</th><th>Grade</th></tr>
+        {% for s in students %}
+        <tr><td>{{ s.student_id }}</td><td>{{ s.study_hours }}</td><td>{{ s.grade }}</td></tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
