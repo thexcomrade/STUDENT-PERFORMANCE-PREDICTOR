@@ -1,4 +1,5 @@
 🎓 Student Performance Predictor
+
 A web-based machine learning application that predicts student exam performance based on real-time inputs like study hours, attendance, past scores, and participation. Built to assist educators in identifying students at academic risk and offering timely intervention.
 
 🚀 Features
@@ -19,4 +20,5 @@ A web-based machine learning application that predicts student exam performance 
 - Open http://localhost:5000/login
 
 📄 License
+
 This project is licensed under the MIT License.
